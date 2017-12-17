@@ -40,7 +40,7 @@ class MenuController: SKScene
         
         nodeArr.append(node!);
         
-        animateNodes(nodeArr);
+      //  animateNodes(nodeArr);
         switch  node?.name
         {
         case "return"?:
