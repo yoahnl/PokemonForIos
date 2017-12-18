@@ -44,7 +44,9 @@ class BagController: SKScene
         case "return"?:
             let gameScene: SKScene?;
             let transition = SKTransition.push(with: SKTransitionDirection.right, duration: 0.3);
+            test?.removeFromSuperview();
             print("Info.LastSceneLoadedMenu =  \(Info.LastSceneLoadedMenu!)");
+            
             gameScene = SKScene(fileNamed: PreviousView!);
             
             self.view?.presentScene(gameScene!, transition: transition);
@@ -81,23 +83,14 @@ class BagController: SKScene
         getBatterieLevel();
         print("fonction didMove called !");
         self.PreviousView = Info.LastSceneLoadedMenu;
-        // Info.LastSceneLoad = "PokemonController";
         print(batteryLevel);
-        /*
-          test = UIScrollView.init(frame: CGRect(x: 141, y: 59, width: 323, height: 130));
-        test?.addSubview(UIView(frame: CGRect(x: 141, y: 59, width: 323, height: 130)));
-        test?.backgroundColor = UIColor.white;
-        view.addSubview(test!);
-        
-        self.view?.addSubview(test!);
-        */
     }
     
     override func update(_ currentTime: TimeInterval)
     {
         getCurrentTime();
     }
-
+    
     
 }
 
