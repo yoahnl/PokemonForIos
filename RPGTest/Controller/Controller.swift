@@ -12,6 +12,7 @@ import Foundation
 
 struct Info
 {
+    static var LastSceneLoadedMenu: String?;
     static var LastSceneLoad: String?;
     static var MenuSaveLocation: CGPoint? = CGPoint();
     static var NPCName: String?;
@@ -446,6 +447,7 @@ class Controller: SKScene, SKPhysicsContactDelegate
         let playerPosition = getPositionAtloadTime();
         SetView(point: playerPosition);
         Info.LastSceneLoad = self.currentZone;
+    
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)

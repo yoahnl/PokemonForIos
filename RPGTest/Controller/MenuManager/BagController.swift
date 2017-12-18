@@ -1,14 +1,16 @@
 //
-//  MenuController.swift
+//  BagController.swift
 //  RPGTest
 //
-//  Created by Yoahn on 23/11/2017.
+//  Created by Yoahn on 18/12/2017.
 //  Copyright © 2017 Yoahn. All rights reserved.
 //
 
-import SpriteKit
+import Foundation
 
-class MenuController: SKScene
+import SpriteKit
+import UIKit
+class BagController: SKScene
 {
     
     var PreviousView: String?;
@@ -16,6 +18,7 @@ class MenuController: SKScene
     var batteryLevel: Int {
         return Int(round(UIDevice.current.batteryLevel * 100))
     }
+    var test: UIScrollView?;
     
     func getBatterieLevel()
     {
@@ -31,52 +34,44 @@ class MenuController: SKScene
         timeLabel.text = time;
     }
     
-    func makeAction(move: UITouch)
+    func makeActionBegan(move: UITouch)
     {
         let location = move.previousLocation(in: self)
         let node = self.nodes(at: location).first
         
-        var nodeArr: [SKNode] = [];
-        
-        nodeArr.append(node!);
-        
-      //  animateNodes(nodeArr);
         switch  node?.name
         {
         case "return"?:
             let gameScene: SKScene?;
-            let transition = SKTransition.doorsOpenHorizontal(withDuration: 0.3);
-            print("Info.LastSceneLoad =  \(Info.LastSceneLoad!)");
+            let transition = SKTransition.push(with: SKTransitionDirection.right, duration: 0.3);
+            print("Info.LastSceneLoadedMenu =  \(Info.LastSceneLoadedMenu!)");
             gameScene = SKScene(fileNamed: PreviousView!);
+            
             self.view?.presentScene(gameScene!, transition: transition);
         default:
             break;
         }
     }
     
-    func animateNodes(_ nodes: [SKNode])
+    func MakeActionEnded(move: UITouch)
     {
-        for (index, node) in nodes.enumerated()
-        {
-            // Offset each node with a slight delay depending on the index
-            
-            // Scale up and then back down
-            
-            let scaleUpAction = SKAction.scale(to: 1.6, duration: 0.3)
-            let scaleDownAction = SKAction.scale(by: 1.6, duration: 0.3)
-
-            let actionSequence = SKAction.sequence([scaleUpAction, scaleDownAction]);
-            
-            // Run the action
-            node.run(actionSequence)
-        }
+        
     }
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         if let move = touches.first
         {
-            makeAction(move: move);
+            makeActionBegan(move: move);
+        }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        if let move = touches.first
+        {
+            MakeActionEnded(move: move);
         }
     }
     
@@ -85,13 +80,24 @@ class MenuController: SKScene
         getCurrentTime();
         getBatterieLevel();
         print("fonction didMove called !");
-        self.PreviousView = Info.LastSceneLoad;
-        Info.LastSceneLoad = "MenuController";
+        self.PreviousView = Info.LastSceneLoadedMenu;
+        // Info.LastSceneLoad = "PokemonController";
         print(batteryLevel);
+        /*
+          test = UIScrollView.init(frame: CGRect(x: 141, y: 59, width: 323, height: 130));
+        test?.addSubview(UIView(frame: CGRect(x: 141, y: 59, width: 323, height: 130)));
+        test?.backgroundColor = UIColor.white;
+        view.addSubview(test!);
+        
+        self.view?.addSubview(test!);
+        */
     }
     
     override func update(_ currentTime: TimeInterval)
     {
         getCurrentTime();
     }
+
+    
 }
+

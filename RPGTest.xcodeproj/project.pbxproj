@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		218C659779FF7D2E4A8DD8AF /* Pods_RPGTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E84127B19F165EA6F0556E9 /* Pods_RPGTest.framework */; };
+		8A10ED721FE7140900D5446D /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A10ED711FE7140900D5446D /* Bag.swift */; };
+		8A10ED751FE72A1500D5446D /* BagController.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A10ED741FE72A1500D5446D /* BagController.sks */; };
+		8A10ED771FE72B0500D5446D /* ActionMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A10ED761FE72B0500D5446D /* ActionMenu.sks */; };
+		8A10ED791FE735AB00D5446D /* PokemonController.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A10ED781FE735AB00D5446D /* PokemonController.sks */; };
+		8A10ED7B1FE7399F00D5446D /* PokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A10ED7A1FE7399F00D5446D /* PokemonController.swift */; };
+		8A10ED7D1FE7478F00D5446D /* BagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A10ED7C1FE7478F00D5446D /* BagController.swift */; };
 		8A18DDBB1FC302CF00A88A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18DDBA1FC302CF00A88A60 /* AppDelegate.swift */; };
 		8A18DDC11FC302CF00A88A60 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18DDC01FC302CF00A88A60 /* GameScene.swift */; };
 		8A18DDC31FC302CF00A88A60 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18DDC21FC302CF00A88A60 /* GameViewController.swift */; };
@@ -40,6 +46,12 @@
 
 /* Begin PBXFileReference section */
 		4CCDB56FBC382840F3DE1B4D /* Pods-RPGTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPGTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPGTest/Pods-RPGTest.release.xcconfig"; sourceTree = "<group>"; };
+		8A10ED711FE7140900D5446D /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		8A10ED741FE72A1500D5446D /* BagController.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BagController.sks; sourceTree = "<group>"; };
+		8A10ED761FE72B0500D5446D /* ActionMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ActionMenu.sks; sourceTree = "<group>"; };
+		8A10ED781FE735AB00D5446D /* PokemonController.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PokemonController.sks; sourceTree = "<group>"; };
+		8A10ED7A1FE7399F00D5446D /* PokemonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonController.swift; sourceTree = "<group>"; };
+		8A10ED7C1FE7478F00D5446D /* BagController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagController.swift; sourceTree = "<group>"; };
 		8A18DDB71FC302CF00A88A60 /* RPGTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPGTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A18DDBA1FC302CF00A88A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A18DDC01FC302CF00A88A60 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = GameScene.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -103,6 +115,60 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8A10ED6C1FE704FB00D5446D /* BattleManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BattleManager;
+			sourceTree = "<group>";
+		};
+		8A10ED6D1FE7050600D5446D /* BagManager */ = {
+			isa = PBXGroup;
+			children = (
+				8A10ED711FE7140900D5446D /* Bag.swift */,
+			);
+			path = BagManager;
+			sourceTree = "<group>";
+		};
+		8A10ED6E1FE7054700D5446D /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8AF7E9C11FE1858000236586 /* NewZone.swift */,
+				8A18DDC01FC302CF00A88A60 /* GameScene.swift */,
+				8A377D2E1FC467C6007F2E33 /* House.swift */,
+				8A377D341FC4F0FB007F2E33 /* HouseInside.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		8A10ED6F1FE7056A00D5446D /* NPCManager */ = {
+			isa = PBXGroup;
+			children = (
+				8A645F921FD862CF00FF1126 /* NonPlayerCharacter.swift */,
+			);
+			path = NPCManager;
+			sourceTree = "<group>";
+		};
+		8A10ED701FE7057A00D5446D /* MenuManager */ = {
+			isa = PBXGroup;
+			children = (
+				8A1DE80D1FC70368000AEB6C /* MenuController.swift */,
+				8A10ED7A1FE7399F00D5446D /* PokemonController.swift */,
+				8A10ED7C1FE7478F00D5446D /* BagController.swift */,
+			);
+			path = MenuManager;
+			sourceTree = "<group>";
+		};
+		8A10ED731FE729FD00D5446D /* MenuScene */ = {
+			isa = PBXGroup;
+			children = (
+				8AF0150A1FC7328A00AED88C /* MenuController.sks */,
+				8A10ED741FE72A1500D5446D /* BagController.sks */,
+				8A10ED781FE735AB00D5446D /* PokemonController.sks */,
+			);
+			path = MenuScene;
+			sourceTree = "<group>";
+		};
 		8A18DDAE1FC302CF00A88A60 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				8A1D750C1FD9839800F2E3CD /* ActionNPC.sks */,
+				8A10ED761FE72B0500D5446D /* ActionMenu.sks */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -166,10 +233,10 @@
 		8A1DE8061FC5C538000AEB6C /* GameScene */ = {
 			isa = PBXGroup;
 			children = (
+				8A10ED731FE729FD00D5446D /* MenuScene */,
 				8A1DE8091FC5C54F000AEB6C /* GameScene.sks */,
 				8A1DE8081FC5C54F000AEB6C /* House.sks */,
 				8A1DE8071FC5C54F000AEB6C /* HouseInside.sks */,
-				8AF0150A1FC7328A00AED88C /* MenuController.sks */,
 				8AF7E9C31FE1861E00236586 /* NewZone.sks */,
 			);
 			name = GameScene;
@@ -179,13 +246,12 @@
 		8A377D361FC5C3E7007F2E33 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8A10ED701FE7057A00D5446D /* MenuManager */,
+				8A10ED6F1FE7056A00D5446D /* NPCManager */,
+				8A10ED6E1FE7054700D5446D /* Scene */,
+				8A10ED6D1FE7050600D5446D /* BagManager */,
+				8A10ED6C1FE704FB00D5446D /* BattleManager */,
 				8A377D301FC4681A007F2E33 /* Controller.swift */,
-				8A18DDC01FC302CF00A88A60 /* GameScene.swift */,
-				8A377D2E1FC467C6007F2E33 /* House.swift */,
-				8A377D341FC4F0FB007F2E33 /* HouseInside.swift */,
-				8A1DE80D1FC70368000AEB6C /* MenuController.swift */,
-				8A645F921FD862CF00FF1126 /* NonPlayerCharacter.swift */,
-				8AF7E9C11FE1858000236586 /* NewZone.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -262,9 +328,12 @@
 			files = (
 				8AE7C8A71FDC251F00B9B3D8 /* PlayerCharacterBack.atlas in Resources */,
 				8A18DDC61FC302CF00A88A60 /* Main.storyboard in Resources */,
+				8A10ED751FE72A1500D5446D /* BagController.sks in Resources */,
 				8AE7C8A81FDC251F00B9B3D8 /* PlayerCharacterFront.atlas in Resources */,
+				8A10ED771FE72B0500D5446D /* ActionMenu.sks in Resources */,
 				8A18DDC81FC302CF00A88A60 /* Assets.xcassets in Resources */,
 				8AF7E9C01FE0765700236586 /* test.m4a in Resources */,
+				8A10ED791FE735AB00D5446D /* PokemonController.sks in Resources */,
 				8A19DC2D1FC395540035B384 /* MyTileSet.sks in Resources */,
 				8AF7E9C41FE1861E00236586 /* NewZone.sks in Resources */,
 				8A1D750D1FD9839800F2E3CD /* ActionNPC.sks in Resources */,
@@ -343,14 +412,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A10ED721FE7140900D5446D /* Bag.swift in Sources */,
 				8A645F931FD862CF00FF1126 /* NonPlayerCharacter.swift in Sources */,
 				8AF7E9C21FE1858000236586 /* NewZone.swift in Sources */,
 				8A377D311FC4681A007F2E33 /* Controller.swift in Sources */,
+				8A10ED7D1FE7478F00D5446D /* BagController.swift in Sources */,
 				8A1DE80E1FC70368000AEB6C /* MenuController.swift in Sources */,
 				8A18DDC11FC302CF00A88A60 /* GameScene.swift in Sources */,
 				8A18DDC31FC302CF00A88A60 /* GameViewController.swift in Sources */,
 				8A377D2F1FC467C6007F2E33 /* House.swift in Sources */,
 				8A377D351FC4F0FB007F2E33 /* HouseInside.swift in Sources */,
+				8A10ED7B1FE7399F00D5446D /* PokemonController.swift in Sources */,
 				8A18DDBB1FC302CF00A88A60 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
