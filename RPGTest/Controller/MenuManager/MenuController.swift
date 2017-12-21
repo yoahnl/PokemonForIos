@@ -49,6 +49,7 @@ class MenuController: SKScene
             let transition = SKTransition.doorsOpenHorizontal(withDuration: 0.3);
             print("Info.LastSceneLoad =  \(Info.LastSceneLoad!)");
             gameScene = SKScene(fileNamed: PreviousView!);
+            Info.LastSceneLoad = "MenuController";
             self.view?.presentScene(gameScene!, transition: transition);
         default:
             break;
@@ -134,6 +135,7 @@ class MenuController: SKScene
         getBatterieLevel();
         print("fonction didMove called !");
         self.PreviousView = Info.LastSceneLoad;
+        
         Info.LastSceneLoadedMenu = "MenuController";
         print(batteryLevel);
     }

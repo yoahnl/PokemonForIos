@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>small_description</key>
+		<string>un truc qui marche surement</string>
+		<key>number</key>
+		<integer>2</integer>
+		<key>name</key>
+		<string>Ta mère</string>
+		<key>description</key>
+		<string>un truc qui marche surement</string>
+		<key>type</key>
+		<string>healt</string>
+	</dict>
+	<dict>
+		<key>small_description</key>
+		<string>Favorise l&apos;augmentation de l&apos;amitié du détenteur.</string>
+		<key>number</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>Grelot Zen</string>
+		<key>description</key>
+		<string>Favorise l&apos;augmentation de l&apos;amitié du détenteur.</string>
+		<key>type</key>
+		<string>item</string>
+	</dict>
+	<dict>
+		<key>small_description</key>
+		<string>j&apos;ai vraiment faim !!!</string>
+		<key>number</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>Sandwich</string>
+		<key>description</key>
+		<string>poulet</string>
+		<key>type</key>
+		<string>healt</string>
+	</dict>
+	<dict>
+		<key>small_description</key>
+		<string>Une Pokéball pour les attraper tous, une Pokéball pour les trouver</string>
+		<key>number</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>Pokéball Unique</string>
+		<key>description</key>
+		<string>Une Pokéball pour les attraper tous</string>
+		<key>type</key>
+		<string>pokeball</string>
+	</dict>
+</array>
+</plist>

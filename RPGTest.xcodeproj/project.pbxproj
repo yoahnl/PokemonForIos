@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		218C659779FF7D2E4A8DD8AF /* Pods_RPGTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E84127B19F165EA6F0556E9 /* Pods_RPGTest.framework */; };
-		8A10ED721FE7140900D5446D /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A10ED711FE7140900D5446D /* Bag.swift */; };
+		8A10ED721FE7140900D5446D /* BagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A10ED711FE7140900D5446D /* BagManager.swift */; };
 		8A10ED751FE72A1500D5446D /* BagController.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A10ED741FE72A1500D5446D /* BagController.sks */; };
 		8A10ED771FE72B0500D5446D /* ActionMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A10ED761FE72B0500D5446D /* ActionMenu.sks */; };
 		8A10ED791FE735AB00D5446D /* PokemonController.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A10ED781FE735AB00D5446D /* PokemonController.sks */; };
@@ -30,6 +30,7 @@
 		8A377D2F1FC467C6007F2E33 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A377D2E1FC467C6007F2E33 /* House.swift */; };
 		8A377D311FC4681A007F2E33 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A377D301FC4681A007F2E33 /* Controller.swift */; };
 		8A377D351FC4F0FB007F2E33 /* HouseInside.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A377D341FC4F0FB007F2E33 /* HouseInside.swift */; };
+		8A4EDAF01FE881C400998917 /* BagTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EDAEF1FE881C400998917 /* BagTableView.swift */; };
 		8A645F911FD8494E00FF1126 /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A645F901FD8494E00FF1126 /* GameData.plist */; };
 		8A645F931FD862CF00FF1126 /* NonPlayerCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A645F921FD862CF00FF1126 /* NonPlayerCharacter.swift */; };
 		8ACC6FED1FE04C9B00526313 /* PowerClear-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACC6FEC1FE04C9B00526313 /* PowerClear-Regular.otf */; };
@@ -37,6 +38,8 @@
 		8AE7C8A71FDC251F00B9B3D8 /* PlayerCharacterBack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8AE7C8A31FDC251F00B9B3D8 /* PlayerCharacterBack.atlas */; };
 		8AE7C8A81FDC251F00B9B3D8 /* PlayerCharacterFront.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8AE7C8A41FDC251F00B9B3D8 /* PlayerCharacterFront.atlas */; };
 		8AE7C8A91FDC251F00B9B3D8 /* PlayerCharacterRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8AE7C8A51FDC251F00B9B3D8 /* PlayerCharacterRight.atlas */; };
+		8AEBCCDD1FEADE9F00A45055 /* Elements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AEBCCDC1FEADE9F00A45055 /* Elements.plist */; };
+		8AEBCCDF1FEB005F00A45055 /* BagContents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AEBCCDE1FEB005F00A45055 /* BagContents.plist */; };
 		8AF0150B1FC7328A00AED88C /* MenuController.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8AF0150A1FC7328A00AED88C /* MenuController.sks */; };
 		8AF09A541FE29D83000EAD69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF09A531FE29D83000EAD69 /* LaunchScreen.storyboard */; };
 		8AF7E9C01FE0765700236586 /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8AF7E9BF1FE0765700236586 /* test.m4a */; };
@@ -46,7 +49,7 @@
 
 /* Begin PBXFileReference section */
 		4CCDB56FBC382840F3DE1B4D /* Pods-RPGTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPGTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPGTest/Pods-RPGTest.release.xcconfig"; sourceTree = "<group>"; };
-		8A10ED711FE7140900D5446D /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		8A10ED711FE7140900D5446D /* BagManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagManager.swift; sourceTree = "<group>"; };
 		8A10ED741FE72A1500D5446D /* BagController.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BagController.sks; sourceTree = "<group>"; };
 		8A10ED761FE72B0500D5446D /* ActionMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ActionMenu.sks; sourceTree = "<group>"; };
 		8A10ED781FE735AB00D5446D /* PokemonController.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PokemonController.sks; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 		8A377D2E1FC467C6007F2E33 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		8A377D301FC4681A007F2E33 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		8A377D341FC4F0FB007F2E33 /* HouseInside.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseInside.swift; sourceTree = "<group>"; };
+		8A4EDAEF1FE881C400998917 /* BagTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagTableView.swift; sourceTree = "<group>"; };
 		8A645F901FD8494E00FF1126 /* GameData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GameData.plist; sourceTree = "<group>"; };
 		8A645F921FD862CF00FF1126 /* NonPlayerCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonPlayerCharacter.swift; sourceTree = "<group>"; };
 		8ACC6FEC1FE04C9B00526313 /* PowerClear-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PowerClear-Regular.otf"; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 		8AE7C8A31FDC251F00B9B3D8 /* PlayerCharacterBack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerCharacterBack.atlas; sourceTree = "<group>"; };
 		8AE7C8A41FDC251F00B9B3D8 /* PlayerCharacterFront.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerCharacterFront.atlas; sourceTree = "<group>"; };
 		8AE7C8A51FDC251F00B9B3D8 /* PlayerCharacterRight.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerCharacterRight.atlas; sourceTree = "<group>"; };
+		8AEBCCDC1FEADE9F00A45055 /* Elements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Elements.plist; sourceTree = "<group>"; };
+		8AEBCCDE1FEB005F00A45055 /* BagContents.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BagContents.plist; sourceTree = "<group>"; };
 		8AF0150A1FC7328A00AED88C /* MenuController.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuController.sks; sourceTree = "<group>"; };
 		8AF09A531FE29D83000EAD69 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AF7E9BF1FE0765700236586 /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
@@ -125,7 +131,9 @@
 		8A10ED6D1FE7050600D5446D /* BagManager */ = {
 			isa = PBXGroup;
 			children = (
-				8A10ED711FE7140900D5446D /* Bag.swift */,
+				8A10ED7C1FE7478F00D5446D /* BagController.swift */,
+				8A10ED711FE7140900D5446D /* BagManager.swift */,
+				8A4EDAEF1FE881C400998917 /* BagTableView.swift */,
 			);
 			path = BagManager;
 			sourceTree = "<group>";
@@ -152,9 +160,9 @@
 		8A10ED701FE7057A00D5446D /* MenuManager */ = {
 			isa = PBXGroup;
 			children = (
+				8AEBCCE01FEB0DC800A45055 /* Pokemon */,
+				8A10ED6D1FE7050600D5446D /* BagManager */,
 				8A1DE80D1FC70368000AEB6C /* MenuController.swift */,
-				8A10ED7A1FE7399F00D5446D /* PokemonController.swift */,
-				8A10ED7C1FE7478F00D5446D /* BagController.swift */,
 			);
 			path = MenuManager;
 			sourceTree = "<group>";
@@ -197,6 +205,9 @@
 		8A18DDB91FC302CF00A88A60 /* RPGTest */ = {
 			isa = PBXGroup;
 			children = (
+				8AEBCCDE1FEB005F00A45055 /* BagContents.plist */,
+				8A645F901FD8494E00FF1126 /* GameData.plist */,
+				8AEBCCDC1FEADE9F00A45055 /* Elements.plist */,
 				8AF7E9BF1FE0765700236586 /* test.m4a */,
 				8ACC6FEB1FE0497100526313 /* fonts */,
 				8A1D750E1FD983A600F2E3CD /* Action */,
@@ -204,7 +215,6 @@
 				8A1DE8051FC5C4AD000AEB6C /* Core_files */,
 				8A377D361FC5C3E7007F2E33 /* Controller */,
 				8A1DE8061FC5C538000AEB6C /* GameScene */,
-				8A645F901FD8494E00FF1126 /* GameData.plist */,
 				8AF09A531FE29D83000EAD69 /* LaunchScreen.storyboard */,
 			);
 			path = RPGTest;
@@ -249,7 +259,6 @@
 				8A10ED701FE7057A00D5446D /* MenuManager */,
 				8A10ED6F1FE7056A00D5446D /* NPCManager */,
 				8A10ED6E1FE7054700D5446D /* Scene */,
-				8A10ED6D1FE7050600D5446D /* BagManager */,
 				8A10ED6C1FE704FB00D5446D /* BattleManager */,
 				8A377D301FC4681A007F2E33 /* Controller.swift */,
 			);
@@ -262,6 +271,14 @@
 				8ACC6FEC1FE04C9B00526313 /* PowerClear-Regular.otf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		8AEBCCE01FEB0DC800A45055 /* Pokemon */ = {
+			isa = PBXGroup;
+			children = (
+				8A10ED7A1FE7399F00D5446D /* PokemonController.swift */,
+			);
+			path = Pokemon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +345,7 @@
 			files = (
 				8AE7C8A71FDC251F00B9B3D8 /* PlayerCharacterBack.atlas in Resources */,
 				8A18DDC61FC302CF00A88A60 /* Main.storyboard in Resources */,
+				8AEBCCDD1FEADE9F00A45055 /* Elements.plist in Resources */,
 				8A10ED751FE72A1500D5446D /* BagController.sks in Resources */,
 				8AE7C8A81FDC251F00B9B3D8 /* PlayerCharacterFront.atlas in Resources */,
 				8A10ED771FE72B0500D5446D /* ActionMenu.sks in Resources */,
@@ -336,6 +354,7 @@
 				8A10ED791FE735AB00D5446D /* PokemonController.sks in Resources */,
 				8A19DC2D1FC395540035B384 /* MyTileSet.sks in Resources */,
 				8AF7E9C41FE1861E00236586 /* NewZone.sks in Resources */,
+				8AEBCCDF1FEB005F00A45055 /* BagContents.plist in Resources */,
 				8A1D750D1FD9839800F2E3CD /* ActionNPC.sks in Resources */,
 				8AF09A541FE29D83000EAD69 /* LaunchScreen.storyboard in Resources */,
 				8A18DDD51FC302DE00A88A60 /* Assets.xcassets in Resources */,
@@ -412,8 +431,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A10ED721FE7140900D5446D /* Bag.swift in Sources */,
+				8A10ED721FE7140900D5446D /* BagManager.swift in Sources */,
 				8A645F931FD862CF00FF1126 /* NonPlayerCharacter.swift in Sources */,
+				8A4EDAF01FE881C400998917 /* BagTableView.swift in Sources */,
 				8AF7E9C21FE1858000236586 /* NewZone.swift in Sources */,
 				8A377D311FC4681A007F2E33 /* Controller.swift in Sources */,
 				8A10ED7D1FE7478F00D5446D /* BagController.swift in Sources */,
