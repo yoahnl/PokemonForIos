@@ -40,7 +40,6 @@ class NonPlayerCharacter: SKSpriteNode
             {
                 action1 = SKAction(named: value as! String, duration: 5)!;
                 isAction1 = true;
-                print("value for action = \(value)")
                 Action = value as? String;
             }
         }

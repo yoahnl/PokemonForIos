@@ -14,15 +14,15 @@ class MenuController: SKScene
     
     var PreviousView: String?;
     var time: String?;
-    var batteryLevel: Int {
-        return Int(round(UIDevice.current.batteryLevel * 100))
-    }
     
     func getBatterieLevel()
     {
+        UIDevice.current.isBatteryMonitoringEnabled = true;
+        let batteryLevel = UIDevice.current.batteryLevel;
         let batterieLabel: SKLabelNode = (self.childNode(withName: "Batterie"))! as! SKLabelNode;
-        batterieLabel.text =  String(batteryLevel);
+        batterieLabel.text =  String(format: "%.0f%%", batteryLevel * 100);
     }
+    
     func getCurrentTime()
     {
         let hh2 = (Calendar.current.component(.hour, from: Date()));
@@ -133,11 +133,10 @@ class MenuController: SKScene
     {
         getCurrentTime();
         getBatterieLevel();
-        print("fonction didMove called !");
         self.PreviousView = Info.LastSceneLoad;
         
         Info.LastSceneLoadedMenu = "MenuController";
-        print(batteryLevel);
+        
     }
     
     override func update(_ currentTime: TimeInterval)

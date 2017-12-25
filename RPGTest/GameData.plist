@@ -76,6 +76,77 @@
 				</dict>
 			</dict>
 		</dict>
+		<key>NewZone</key>
+		<dict>
+			<key>NPC</key>
+			<dict>
+				<key>Villager1_NPC</key>
+				<dict>
+					<key>Action</key>
+					<string>MoveToLeft</string>
+					<key>SizeScale</key>
+					<string>1.5</string>
+					<key>Position</key>
+					<array>
+						<integer>-240</integer>
+						<integer>80</integer>
+					</array>
+					<key>BaseImage</key>
+					<string>OldManSprite_top_0</string>
+					<key>Left</key>
+					<array>
+						<string>player_left_0</string>
+						<string>player_left_1</string>
+						<string>player_left_2</string>
+					</array>
+					<key>Right</key>
+					<array>
+						<string>player_right_0</string>
+						<string>player_right_1</string>
+						<string>player_right_2</string>
+					</array>
+					<key>Range</key>
+					<string>NPC</string>
+					<key>Speech</key>
+					<array>
+						<string>Poulet</string>
+						<string>Pied</string>
+					</array>
+				</dict>
+				<key>Villager3_NPC</key>
+				<dict>
+					<key>Action</key>
+					<string>MoveToLeft</string>
+					<key>SizeScale</key>
+					<string>1.5</string>
+					<key>Position</key>
+					<array>
+						<integer>-240</integer>
+						<integer>30</integer>
+					</array>
+					<key>BaseImage</key>
+					<string>OldManSprite_top_0</string>
+					<key>Left</key>
+					<array>
+						<string>player_left_0</string>
+						<string>player_left_1</string>
+						<string>player_left_2</string>
+					</array>
+					<key>Right</key>
+					<array>
+						<string>player_right_0</string>
+						<string>player_right_1</string>
+						<string>player_right_2</string>
+					</array>
+					<key>Range</key>
+					<string>NPC</string>
+					<key>Speech</key>
+					<array>
+						<string>J&apos;aime KFC et le Poulet ! J&apos;aime KFC et le Poulet !      Si tout va bien c&apos;est la ligne Numéro 2             et ensuite, on verra ce que ça donne !  Enfin bon tout cela n&apos;est pas très important je trouve.</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
 	</dict>
 </dict>
 </plist>

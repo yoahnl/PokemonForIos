@@ -17,16 +17,17 @@ class BagController: SKScene
     var currentBagPocket: String = "item"
     var PreviousView: String?;
     var time: String?;
-    var batteryLevel: Int {
-        return Int(round(UIDevice.current.batteryLevel * 100))
-    }
     weak var Table: UITableView!;
     
+
     func getBatterieLevel()
     {
+        UIDevice.current.isBatteryMonitoringEnabled = true;
+        let batteryLevel = UIDevice.current.batteryLevel;
         let batterieLabel: SKLabelNode = (self.childNode(withName: "Batterie"))! as! SKLabelNode;
-        batterieLabel.text =  String(batteryLevel);
+        batterieLabel.text =  String(format: "%.0f%%", batteryLevel * 100);
     }
+    
     func getCurrentTime()
     {
         let hh2 = (Calendar.current.component(.hour, from: Date()));
@@ -87,19 +88,18 @@ class BagController: SKScene
         for (index, node) in nodes.enumerated()
         {
             print(index);
-            print("node.anme = \(node.name)")
             if node.name == "item" || node.name == "healt" || node.name == "CS_CT" || node.name == "key_item" || node.name == "pokeball"
                 
             {
-                print("removing the Table");
                 currentBagPocket = node.name!;
                 bagContents = try! BagContents.loadFromPlist(current: currentBagPocket)
                 Table?.removeFromSuperview()
                 TableViewSetUp()
-
+                
             }
         }
     }
+   
     func TableViewSetUp()
     {
         
@@ -108,8 +108,13 @@ class BagController: SKScene
         Table.isOpaque = true;
         view?.addSubview(Table);
         self.Table = Table;
+        
         Table.dataSource = self;
         Table.delegate = self;
+        let NibName = UINib(nibName: "CustomCell", bundle: nil);
+        Table.register(NibName, forCellReuseIdentifier: "ElementCell");
+        Table.estimatedRowHeight = 70;
+        Table.rowHeight = UITableViewAutomaticDimension;
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
@@ -132,11 +137,9 @@ class BagController: SKScene
     {
         getCurrentTime();
         getBatterieLevel();
-        print("fonction didMove called !");
         self.PreviousView = Info.LastSceneLoadedMenu;
-        print(batteryLevel);
         bagContents = try! BagContents.loadFromPlist(current: currentBagPocket)
-
+        
         TableViewSetUp();
     }
     

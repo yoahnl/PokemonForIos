@@ -3,44 +3,24 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>image</key>
+		<string>potion</string>
 		<key>small_description</key>
-		<string>un truc qui marche surement</string>
+		<string>Un truc dans Pokémon qui ramène de la vie. Je crois 20 pv. C&apos;est peu.</string>
 		<key>number</key>
-		<integer>2</integer>
+		<integer>10</integer>
 		<key>name</key>
-		<string>Ta mère</string>
-		<key>description</key>
-		<string>un truc qui marche surement</string>
-		<key>type</key>
-		<string>healt</string>
-	</dict>
-	<dict>
-		<key>small_description</key>
-		<string>Favorise l&apos;augmentation de l&apos;amitié du détenteur.</string>
-		<key>number</key>
-		<integer>1</integer>
-		<key>name</key>
-		<string>Grelot Zen</string>
-		<key>description</key>
-		<string>Favorise l&apos;augmentation de l&apos;amitié du détenteur.</string>
-		<key>type</key>
-		<string>item</string>
-	</dict>
-	<dict>
-		<key>small_description</key>
-		<string>j&apos;ai vraiment faim !!!</string>
-		<key>number</key>
-		<integer>1</integer>
-		<key>name</key>
-		<string>Sandwich</string>
+		<string>Potion</string>
 		<key>description</key>
 		<string>poulet</string>
 		<key>type</key>
 		<string>healt</string>
 	</dict>
 	<dict>
+		<key>image</key>
+		<string>pokeball_item</string>
 		<key>small_description</key>
-		<string>Une Pokéball pour les attraper tous, une Pokéball pour les trouver</string>
+		<string>Une Pokéball pour les attraper tous, une Pokéball pour les trouver tous et dans les ténébres les réunir.</string>
 		<key>number</key>
 		<integer>1</integer>
 		<key>name</key>

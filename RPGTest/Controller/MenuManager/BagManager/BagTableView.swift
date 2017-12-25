@@ -19,26 +19,36 @@ struct BagContents
     let small_description: String;
     let number: Int;
     let type: String;
+    let image: String;
 }
 
 extension BagController: UITableViewDataSource, UITableViewDelegate
 {
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return bagContents.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         let element = bagContents[indexPath.row]
         
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "ElementCell")
+        let ncell: CustomCell = tableView.dequeueReusableCell(withIdentifier: "ElementCell") as! CustomCell
+        ncell.awakeFromNib();
+        ncell.First.text = element.name;
+        ncell.Number.text = String(element.number);
+        ncell.Description.text = element.small_description;
+        ncell.ItemImage.image = UIImage(named: element.image);
         
-        cell.textLabel?.text = element.name
-        cell.detailTextLabel?.text = element.small_description
         
-        return cell
+        return ncell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 100.0;//Choose your custom row height
+    }
+    
 }
 
 extension BagContents
@@ -86,11 +96,13 @@ extension BagContents
             let small_description = dict["small_description"] as! String;
             let number = dict["number"] as! Int;
             let type = dict["type"] as! String;
+            let image = dict["image"] as! String;
             return BagContents(name: name,
                                description: description,
                                small_description: small_description,
                                number: number,
-                               type: type
+                               type: type,
+                               image: image
             )
             
         }
@@ -99,11 +111,13 @@ extension BagContents
         let small_description = dict["small_description"] as! String;
         let number = dict["number"] as! Int;
         let type = dict["type"] as! String;
+        let image = dict["image"] as! String;
         return BagContents(name: name,
                            description: description,
                            small_description: small_description,
                            number: number,
-                           type: type
+                           type: type,
+                           image: image
         )
     }
 }
